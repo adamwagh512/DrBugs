@@ -8,3 +8,6 @@ export default function Home() {
       </div>
   )
 }
+
+
+//npm add react-icons to add icons
