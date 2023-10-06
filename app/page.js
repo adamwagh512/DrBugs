@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Navbar from '@/components/navbar'
 import Main from '../components/Main'
 import About from '../components/About'
+import Contact from '../components/Contact'
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <Navbar />
         <Main />
         <About />
+        <Contact />
       </div>
   )
 }
