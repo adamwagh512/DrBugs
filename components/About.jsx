@@ -2,7 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about" className="py-4 px-10 text-xl">
+    <div id="about-us" className="py-4 px-10 text-xl">
+        <div className="py-8"></div>
       <p className="font-bold py-2 text-2xl">
         About Dr. Bugs: Your Trusted Pest Control Partner
       </p>
