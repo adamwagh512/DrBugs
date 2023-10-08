@@ -1,11 +1,9 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { GrResume } from "react-icons/gr";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import {React, useEffect} from "react";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { MdFacebook, MdChat, MdCall, MdMail } from 'react-icons/md'
 import contact from '../public/assets/contact.jpg'
 import { useForm } from "react-hook-form";
 
@@ -15,8 +13,10 @@ const Contact = () => {
     window.location.href = `mailto:jkilpatrick@dr-bugs.com?subject=${formData.subject}&body=Hi, my name is ${formData.name} and my phone number is ${formData.phone} and ${formData.message}`;
   };
 
+
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <div id="contact-us" className="w-full lg:h-screen">
+        <div className="py-6"></div>
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
@@ -42,33 +42,31 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="pt-8"> Connect with me via phone call, text or Facebook</p>
+                <p className="pt-8"> Connect with me via phone call, text, email or Facebook</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                     <Link
-                      href="https://www.linkedin.com/in/adam-wagh/"
-                      target="_blank"
+                      href="Tel:+18309556625"
                       rel="noreferrer"
                     >
-                      <FaLinkedinIn />
+                      <MdCall size={35} />
                     </Link>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                     <Link
-                      href="https://github.com/adamwagh512"
-                      target="_blank"
+                      href="Mailto:jkilpatrick@dr-bugs.com"
                       rel="noreferrer"
                     >
-                      <FaGithub />
+                      <MdMail size={35} /> 
                     </Link>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                     <Link
-                      href="../assets/resume.pdf"
+                      href="https://www.facebook.com/profile.php?id=100054611313087&mibextid=9R9pXO"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <BsFillPersonLinesFill /> 
+                      <MdFacebook size={35} /> 
                     </Link>
                   </div>
                   {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
@@ -130,7 +128,7 @@ const Contact = () => {
                     rows="10"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4 bg-gray-500">
+                <button className="w-full p-4 text-gray-100 mt-4 bg-red-600">
                   Send Message
                 </button>
               </form>
