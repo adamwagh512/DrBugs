@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#4391DA]">
-      <div className="flex justify-between items-center w-full h-full pr-2 2xl:pl-0 md:pr-16 text-[#ff0303] text-xl font-bold m-0">
+      <div className="flex justify-between items-center w-full h-full pr-2 2xl:pl-0 md:pr-16 text-[#000] text-xl font-bold m-0">
         <div>
           <Image src={logo} alt="/" width="295" height={100} />
         </div>
@@ -78,16 +78,17 @@ const Navbar = () => {
           <div className="flex flex-col">
             <ul className="uppercase">
               <Link href="/" alt="/" onClick={handleNav}>
-                <li className="py-4 text-[#ff0404] px-4 font-bold text-xl">Home</li>
+                {/* ff0404 was the red color */}
+                <li className="py-4 text-[#000] px-4 font-bold text-xl">Home</li>
               </Link>
               <Link href="#about-us" alt="/" onClick={handleNav}>
-                <li className="py-4 text-[#ff0404] px-4 font-bold text-xl">About</li>
+                <li className="py-4 text-[#000] px-4 font-bold text-xl">About</li>
               </Link>
               <Link href="#services" alt="/" onClick={handleNav}>
-                <li className="py-4 text-[#ff0404] px-4 font-bold text-xl">Services</li>
+                <li className="py-4 text-[#000] px-4 font-bold text-xl">Services</li>
               </Link>
               <Link href='#contact-us' onClick={handleNav}>
-                <li className="pt-4 text-[#ff0404] px-4 font-bold text-xl">Contact Us</li>
+                <li className="pt-4 text-[#000] px-4 font-bold text-xl">Contact Us</li>
               </Link>
             </ul>
             <div className="fixed bottom-0 w-[75%]">
