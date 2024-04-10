@@ -6,10 +6,10 @@ const Main = () => {
   return (
     <div>
       {/* Little extra padding */}
-      <div className="pt-[9vh]"></div> 
+      <div className="pt-[9vh]"></div>
       <div
         id="home"
-        className=" w-[100vw] h-[70vh] flex justify-center relative"
+        className="h-[70vh] flex justify-center relative lg:mx-[10vw]"
       >
         <Image src={hero} alt="/" fill={true} />
       </div>
